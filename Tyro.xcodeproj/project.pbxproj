@@ -796,11 +796,11 @@
 			};
 			buildConfigurationList = DE702CCA1BFAC6820017CEE8 /* Build configuration list for PBXProject "Tyro" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = DE702CC61BFAC6820017CEE8;
 			productRefGroup = DE702CD11BFAC6830017CEE8 /* Products */;
