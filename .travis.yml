@@ -15,7 +15,7 @@ script:
   - xcodebuild clean -scheme Tyro-iOS -configuration Debug -sdk iphonesimulator
   - xcodebuild test -scheme Tyro-tvOS -destination 'platform=tvOS Simulator,name=Apple TV' | xcpretty -c
   - xcodebuild clean -scheme Tyro-tvOS
-  - xcodebuild build -scheme Tyro-watchOS -destination 'platform=watchOS Simulator,name=Apple Watch - 42mm' | xcpretty -c
+  - xcodebuild build -scheme Tyro-watchOS -destination 'platform=watchOS Simulator,name=Apple Watch Series 4 - 44mm' | xcpretty -c
 # deploy:
 #   provider: script
 #   script: ./scripts/push.sh
