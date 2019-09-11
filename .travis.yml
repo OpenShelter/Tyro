@@ -11,7 +11,7 @@ script:
   - set -o pipefail
   - xcodebuild test -scheme Tyro -configuration Debug | xcpretty -c
   - xcodebuild clean -scheme Tyro -configuration Debug
-  - xcodebuild test -scheme Tyro-iOS -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6s" | xcpretty -c
+  - xcodebuild test -scheme Tyro-iOS -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 8" | xcpretty -c
   - xcodebuild clean -scheme Tyro-iOS -configuration Debug -sdk iphonesimulator
   - xcodebuild test -scheme Tyro-tvOS -destination 'platform=tvOS Simulator,name=Apple TV' | xcpretty -c
   - xcodebuild clean -scheme Tyro-tvOS
