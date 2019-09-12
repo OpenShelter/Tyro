@@ -11,11 +11,11 @@ script:
   - set -o pipefail
   - xcodebuild test -scheme Tyro -configuration Debug | xcpretty -c
   - xcodebuild clean -scheme Tyro -configuration Debug
-  - xcodebuild test -scheme Tyro-iOS -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 8" | xcpretty -c
+  - xcodebuild test -scheme Tyro-iOS -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 8" -UseModernBuildSystem=NO | xcpretty -c
   - xcodebuild clean -scheme Tyro-iOS -configuration Debug -sdk iphonesimulator
-  - xcodebuild test -scheme Tyro-tvOS -destination 'platform=tvOS Simulator,name=Apple TV' | xcpretty -c
+  - xcodebuild test -scheme Tyro-tvOS -destination 'platform=tvOS Simulator,name=Apple TV' -UseModernBuildSystem=NO | xcpretty -c
   - xcodebuild clean -scheme Tyro-tvOS
-  - xcodebuild build -scheme Tyro-watchOS -destination 'platform=watchOS Simulator,name=Apple Watch Series 4 - 44mm' | xcpretty -c
+  - xcodebuild build -scheme Tyro-watchOS -destination 'platform=watchOS Simulator,name=Apple Watch Series 4 - 44mm' -UseModernBuildSystem=NO | xcpretty -c
 # deploy:
 #   provider: script
 #   script: ./scripts/push.sh
